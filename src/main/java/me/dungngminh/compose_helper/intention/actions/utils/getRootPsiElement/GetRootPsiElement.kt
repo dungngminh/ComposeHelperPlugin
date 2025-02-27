@@ -1,4 +1,4 @@
-package com.thelumiereguy.compose_helper.intention.actions.utils.getRootPsiElement
+package me.dungngminh.compose_helper.intention.actions.utils.getRootPsiElement
 
 import com.intellij.psi.PsiElement
 import org.jetbrains.kotlin.psi.KtCallExpression

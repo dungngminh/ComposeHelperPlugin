@@ -1,4 +1,4 @@
-package com.thelumiereguy.compose_helper.intention.actions.wrapActions
+package me.dungngminh.compose_helper.intention.actions.wrapActions
 
 import com.intellij.codeInsight.intention.HighPriorityAction
 import com.intellij.codeInsight.intention.PsiElementBaseIntentionAction
@@ -7,10 +7,10 @@ import com.intellij.codeInsight.template.impl.TemplateImpl
 import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.project.Project
 import com.intellij.psi.PsiElement
-import com.thelumiereguy.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder
-import com.thelumiereguy.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinderImpl
-import com.thelumiereguy.compose_helper.intention.actions.utils.getRootPsiElement.GetRootPsiElement
-import com.thelumiereguy.compose_helper.intention.actions.utils.isIntentionAvailable
+import me.dungngminh.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder
+import me.dungngminh.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinderImpl
+import me.dungngminh.compose_helper.intention.actions.utils.getRootPsiElement.GetRootPsiElement
+import me.dungngminh.compose_helper.intention.actions.utils.isIntentionAvailable
 
 abstract class BaseWrapWithComposableAction :
     PsiElementBaseIntentionAction(),

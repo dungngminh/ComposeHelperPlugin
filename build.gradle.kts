@@ -3,9 +3,9 @@ plugins {
     id("org.jetbrains.intellij") version "1.13.3"
 }
 
-val pluginVersion = "2.0.5"
+val pluginVersion = "2.0.6"
 
-group = "com.thelumiereguy.compose_helper"
+group = "me.dungngminh.compose_helper"
 version = pluginVersion
 
 repositories {
@@ -45,10 +45,11 @@ tasks {
     patchPluginXml {
         version.set(pluginVersion)
         sinceBuild.set("211.*")
-        untilBuild.set("241.*")
+        untilBuild.set("242.*")
         changeNotes.set(
             """
            <ul>
+             <li><b>2.0.6</b> Added support for Android Studio - Lady Bug and IntelliJ 2024.2</li>
              <li><b>2.0.5</b> Added support for Android Studio - Koala and IntelliJ 2024.1</li>
              <li><b>2.0.4</b> Added support for Android Studio - Giraffe and Hedgehog</li>
              <li><b>2.0.3</b> Added support for Android Studio - Electric Eel and Flamingo</li>

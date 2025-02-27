@@ -1,4 +1,4 @@
-package com.thelumiereguy.compose_helper.intention.actions
+package me.dungngminh.compose_helper.intention.actions
 
 import com.intellij.codeInsight.intention.PriorityAction
 import com.intellij.codeInsight.intention.PsiElementBaseIntentionAction
@@ -6,11 +6,11 @@ import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.util.Iconable
 import com.intellij.psi.PsiElement
-import com.thelumiereguy.compose_helper.intention.icons.SdkIcons
-import com.thelumiereguy.compose_helper.intention.actions.utils.composableFinder.ChildComposableFinder
-import com.thelumiereguy.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder
-import com.thelumiereguy.compose_helper.intention.actions.utils.getRootPsiElement.GetRootPsiElement
-import com.thelumiereguy.compose_helper.intention.actions.utils.isIntentionAvailable
+import me.dungngminh.compose_helper.intention.icons.SdkIcons
+import me.dungngminh.compose_helper.intention.actions.utils.composableFinder.ChildComposableFinder
+import me.dungngminh.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder
+import me.dungngminh.compose_helper.intention.actions.utils.getRootPsiElement.GetRootPsiElement
+import me.dungngminh.compose_helper.intention.actions.utils.isIntentionAvailable
 import org.jetbrains.kotlin.psi.KtCallExpression
 import javax.swing.Icon
 
@@ -29,7 +29,7 @@ class RemoveParentComposableIntention :
 
     private val getRootElement = GetRootPsiElement()
 
-    private val composableFunctionFinder: ComposableFunctionFinder = ChildComposableFinder()
+    private val composableFunctionFinder: me.dungngminh.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder = ChildComposableFinder()
 
     override fun isAvailable(project: Project, editor: Editor?, element: PsiElement): Boolean {
         return element.isIntentionAvailable(composableFunctionFinder)

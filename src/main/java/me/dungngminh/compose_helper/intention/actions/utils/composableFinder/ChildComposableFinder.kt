@@ -1,12 +1,13 @@
-package com.thelumiereguy.compose_helper.intention.actions.utils.composableFinder
+package me.dungngminh.compose_helper.intention.actions.utils.composableFinder
 
 import com.intellij.psi.PsiElement
-import com.thelumiereguy.compose_helper.intention.actions.utils.isComposable
+import me.dungngminh.compose_helper.intention.actions.utils.isComposable
 import org.jetbrains.kotlin.psi.KtCallExpression
 import org.jetbrains.kotlin.psi.KtLambdaArgument
 import org.jetbrains.kotlin.psi.psiUtil.getChildOfType
 
-class ChildComposableFinder : ComposableFunctionFinder {
+class ChildComposableFinder :
+    me.dungngminh.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder {
 
     override fun isFunctionComposable(psiElement: PsiElement): Boolean {
 

@@ -1,4 +1,4 @@
-package com.thelumiereguy.compose_helper.intention.actions.wrapActions
+package me.dungngminh.compose_helper.intention.actions.wrapActions
 
 import com.intellij.codeInsight.template.impl.TemplateImpl
 import com.intellij.codeInsight.template.impl.TemplateSettings

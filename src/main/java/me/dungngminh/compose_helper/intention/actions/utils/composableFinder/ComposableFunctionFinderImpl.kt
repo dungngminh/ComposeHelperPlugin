@@ -1,7 +1,7 @@
-package com.thelumiereguy.compose_helper.intention.actions.utils.composableFinder
+package me.dungngminh.compose_helper.intention.actions.utils.composableFinder
 
 import com.intellij.psi.PsiElement
-import com.thelumiereguy.compose_helper.intention.actions.utils.isComposable
+import me.dungngminh.compose_helper.intention.actions.utils.isComposable
 import org.jetbrains.kotlin.psi.KtCallExpression
 import org.jetbrains.kotlin.psi.KtNameReferenceExpression
 import org.jetbrains.kotlin.psi.KtProperty
@@ -9,7 +9,8 @@ import org.jetbrains.kotlin.psi.KtPropertyDelegate
 import org.jetbrains.kotlin.psi.KtValueArgumentList
 import org.jetbrains.kotlin.psi.psiUtil.getChildOfType
 
-class ComposableFunctionFinderImpl : ComposableFunctionFinder {
+class ComposableFunctionFinderImpl :
+    me.dungngminh.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder {
 
     override fun isFunctionComposable(psiElement: PsiElement): Boolean {
         return when (psiElement) {

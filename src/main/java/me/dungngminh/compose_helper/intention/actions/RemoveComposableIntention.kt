@@ -1,4 +1,4 @@
-package com.thelumiereguy.compose_helper.intention.actions
+package me.dungngminh.compose_helper.intention.actions
 
 import com.intellij.codeInsight.intention.LowPriorityAction
 import com.intellij.codeInsight.intention.PsiElementBaseIntentionAction
@@ -6,11 +6,10 @@ import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.util.Iconable
 import com.intellij.psi.PsiElement
-import com.thelumiereguy.compose_helper.intention.icons.SdkIcons.composeIcon
-import com.thelumiereguy.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder
-import com.thelumiereguy.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinderImpl
-import com.thelumiereguy.compose_helper.intention.actions.utils.getRootPsiElement.GetRootPsiElement
-import com.thelumiereguy.compose_helper.intention.actions.utils.isIntentionAvailable
+import me.dungngminh.compose_helper.intention.icons.SdkIcons.composeIcon
+import me.dungngminh.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinderImpl
+import me.dungngminh.compose_helper.intention.actions.utils.getRootPsiElement.GetRootPsiElement
+import me.dungngminh.compose_helper.intention.actions.utils.isIntentionAvailable
 import javax.swing.Icon
 
 class RemoveComposableIntention :
@@ -26,7 +25,7 @@ class RemoveComposableIntention :
         return "Compose helper actions"
     }
 
-    private val composableFunctionFinder: ComposableFunctionFinder = ComposableFunctionFinderImpl()
+    private val composableFunctionFinder: me.dungngminh.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder = ComposableFunctionFinderImpl()
 
     private val getRootElement = GetRootPsiElement()
 

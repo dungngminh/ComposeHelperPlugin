@@ -1,4 +1,4 @@
-package com.thelumiereguy.compose_helper.intention.actions.utils.composableFinder
+package me.dungngminh.compose_helper.intention.actions.utils.composableFinder
 
 import com.intellij.psi.PsiElement
 

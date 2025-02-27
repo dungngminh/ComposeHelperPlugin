@@ -1,4 +1,4 @@
-package com.thelumiereguy.compose_helper.intention.actions
+package me.dungngminh.compose_helper.intention.actions
 
 import com.intellij.codeInsight.intention.impl.IntentionActionGroup
 import com.intellij.openapi.editor.Editor
@@ -9,14 +9,14 @@ import com.intellij.openapi.ui.popup.util.BaseListPopupStep
 import com.intellij.openapi.util.Iconable
 import com.intellij.psi.PsiFile
 import com.intellij.ui.popup.list.ListPopupImpl
-import com.thelumiereguy.compose_helper.intention.icons.SdkIcons
-import com.thelumiereguy.compose_helper.intention.actions.wrapActions.BaseWrapWithComposableAction
-import com.thelumiereguy.compose_helper.intention.actions.wrapActions.WrapWithBoxIntention
-import com.thelumiereguy.compose_helper.intention.actions.wrapActions.WrapWithCardIntention
-import com.thelumiereguy.compose_helper.intention.actions.wrapActions.WrapWithColumnIntention
-import com.thelumiereguy.compose_helper.intention.actions.wrapActions.WrapWithLzyColumnIntention
-import com.thelumiereguy.compose_helper.intention.actions.wrapActions.WrapWithLzyRowIntention
-import com.thelumiereguy.compose_helper.intention.actions.wrapActions.WrapWithRowIntention
+import me.dungngminh.compose_helper.intention.icons.SdkIcons
+import me.dungngminh.compose_helper.intention.actions.wrapActions.BaseWrapWithComposableAction
+import me.dungngminh.compose_helper.intention.actions.wrapActions.WrapWithBoxIntention
+import me.dungngminh.compose_helper.intention.actions.wrapActions.WrapWithCardIntention
+import me.dungngminh.compose_helper.intention.actions.wrapActions.WrapWithColumnIntention
+import me.dungngminh.compose_helper.intention.actions.wrapActions.WrapWithLzyColumnIntention
+import me.dungngminh.compose_helper.intention.actions.wrapActions.WrapWithLzyRowIntention
+import me.dungngminh.compose_helper.intention.actions.wrapActions.WrapWithRowIntention
 import javax.swing.Icon
 
 class WrapWithComposableIntentionGroup :

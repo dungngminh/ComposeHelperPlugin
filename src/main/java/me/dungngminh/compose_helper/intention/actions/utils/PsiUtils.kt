@@ -1,10 +1,10 @@
-package com.thelumiereguy.compose_helper.intention.actions.utils
+package me.dungngminh.compose_helper.intention.actions.utils
 
 import com.intellij.openapi.roots.ProjectRootModificationTracker
 import com.intellij.psi.PsiElement
 import com.intellij.psi.util.CachedValueProvider
 import com.intellij.psi.util.CachedValuesManager
-import com.thelumiereguy.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder
+import me.dungngminh.compose_helper.intention.actions.utils.composableFinder.ComposableFunctionFinder
 import org.jetbrains.kotlin.idea.KotlinLanguage
 import org.jetbrains.kotlin.nj2k.postProcessing.resolve
 import org.jetbrains.kotlin.psi.KtAnnotationEntry
